@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
 		create = (Button) findViewById(R.id.main_activity_button_create);
 		delete_all = (Button) findViewById(R.id.main_activity_button_delete);
 		exit = (Button) findViewById(R.id.main_activity_button_exit);
-
+		// start a quiz
 		start.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 
 			}
 		});
-
+		// create a puzzle
 		create.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-
+		// delete everything created by the current user
 		delete_all.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 				delete_all();
 			}
 		});
-
+		// exit the app
 		exit.setOnClickListener(new View.OnClickListener() {
 
 			@Override
