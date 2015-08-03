@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/create_activity_radio_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/create_activity_editext_url"
+        android:layout_alignLeft="@+id/create_activity_edittext_option"
+        android:layout_below="@+id/create_activity_edittext_option" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/create_activity_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gray_textview_background"
+        android:minHeight="24dip"
+        android:text="@string/create_submit" />
+
+    <EditText
+        android:id="@+id/create_activity_editext_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_activity_button_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/newURL_hint"
+        android:inputType="textUri" />
+
+    <TextView
+        android:id="@+id/create_activity_textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/Create_activity_title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_activity_edittext_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_activity_textview_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/newQuestion_hint" />
+
+    <EditText
+        android:id="@+id/create_activity_edittext_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_activity_edittext_question"
+        android:layout_toLeftOf="@+id/create_activity_button_add"
+        android:ems="10"
+        android:hint="@string/newOption_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/create_activity_button_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_activity_edittext_option"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_action_new" />
+
+</RelativeLayout>

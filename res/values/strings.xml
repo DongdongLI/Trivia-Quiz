@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trivia App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_trivia">Trivia Activity</string>
+    <string name="trivia_activity_ques_num">Q#</string>
+    <string name="trivia_activity_countdown">Time Left: X seconds</string>
+    <string name="trivia_activity_button_quit">Quit</string>
+    <string name="trivia_activity_button_next">Next</string>
+    <string name="trivia_activity_question_textview">Question text goes here...</string>
+     <string name="MainActivity_title">Welcome to\nTrivia App</string>
+    <string name="start_btn_text">Start Trivia</string>
+    <string name="btn_create_text">Create Quiz Question</string>
+    <string name="delete_all_btn_text">Delete All My Question</string>
+    <string name="exti_btn_text">Exit</string>
+    <string name="title_activity_create_question">CreateQuestionActivity</string>
+    <string name="Create_activity_title">Create A New\nQuestion</string>
+    <string name="newQuestion_hint">Type question here</string>
+    <string name="newOption_hint">Type option here</string>
+    <string name="newURL_hint">Paste image URL here (optional)</string>
+    <string name="create_submit">Submit</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="Results_title">Trivia Results</string>
+    <string name="correct_title">Correct Answers</string>
+    <string name="encourage_text">Try again and see if you can get all the correct answers!</string>
+    <string name="Results_Quit_text">Quit</string>
+    <string name="Results_Try_text">Try Again</string>
+
+</resources>
